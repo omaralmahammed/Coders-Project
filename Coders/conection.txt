@@ -1,0 +1,61 @@
+https://chatgpt.com/share/754397ed-51f2-4a29-a840-bd34e5d20f0a
+
+
+
+Open the Package Manager Console from Tools > NuGet Package Manager > Package Manager Console.
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Design
+Install-Package Microsoft.EntityFrameworkCore.Tools
+
+
+then use scafolding command 
+
+Scaffold-DbContext "Server=DESKTOP-2LAAQSG;Database=AnimalAdoptionDB;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context MyDbContext -force
+
+
+add this to program.cs 
+// Add services to the container.
+builder.Services.AddDbContext<MyDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("YourConnectionString")));
+
+
+add this to appsetting 
+"ConnectionStrings": {
+  "YourConnectionString": "Server=DESKTOP-2LAAQSG;Database=Project8;Trusted_Connection=True;TrustServerCertificate=True;"
+}
+
+
+
+same vidos in 
+https://www.youtube.com/watch?v=BsDljcDkCCU&list=PL3ewn8T-zRWgO-GAdXjVRh-6thRog6ddg&index=39
+
+builder.Services.AddCors(options =>
+
+options.AddPolicy("Development", builder =>
+{
+    builder.AllowAnyOrigin();
+    builder.AllowAnyMethod();
+    builder.AllowAnyHeader();
+})
+
+
+);
+
+
+app.UseCors("Development");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

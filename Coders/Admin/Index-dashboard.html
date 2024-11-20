@@ -1,0 +1,352 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <!-- Mirrored from learnplus.demo.frontendmatter.com/student-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Jul 2024 19:59:14 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Student - Dashboard</title>
+
+    <!-- Prevent the demo from appearing in search engines (REMOVE THIS) -->
+    <meta name="robots" content="noindex" />
+
+    <!-- Custom Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500%7CRoboto:400,500&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Perfect Scrollbar -->
+    <link
+      type="text/css"
+      href="assets/vendor/perfect-scrollbar.css"
+      rel="stylesheet"
+    />
+
+    <!-- Material Design Icons -->
+    <link
+      type="text/css"
+      href="assets/css/material-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="assets/css/fontawesome.css" rel="stylesheet" />
+
+    <!-- Preloader -->
+    <link type="text/css" href="assets/vendor/spinkit.css" rel="stylesheet" />
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet" />
+  </head>
+
+  <body class="layout-fluid">
+    <div class="preloader">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout">
+      <!-- ///////////////////////////////////////////////////////////////////////////////////// Header /////////////////////////////////////////////////////////////////////////////////////-->
+
+      <div id="header" data-fixed class="mdk-header js-mdk-header mb-0"></div>
+
+      <!-- ///////////////////////////////////////////////////////////////////////////////////// Header /////////////////////////////////////////////////////////////////////////////////////-->
+
+      <!-- Header Layout Content -->
+      <div class="mdk-header-layout__content">
+        <div
+          data-push
+          data-responsive-width="992px"
+          class="mdk-drawer-layout js-mdk-drawer-layout"
+        >
+          <div class="mdk-drawer-layout__content page">
+            <div class="container-fluid page__container">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="Index-dashboard.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active">General</li>
+              </ol>
+
+              <h1 class="h2">Dashboard</h1>
+
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="media align-items-center">
+                        <div class="media-body">
+                          <h4 class="card-title">Programs</h4>
+                        </div>
+                        <div class="media-right">
+                          <a
+                            class="btn btn-sm btn-primary"
+                            href="AllPrograms.html"
+                            >Our Programs</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <ul
+                      class="list-group list-group-fit mb-0"
+                      style="z-index: initial"
+                      id="prgramCart"
+                    ></ul>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="media align-items-center">
+                        <div class="media-body">
+                          <h4 class="card-title">Instructors</h4>
+                        </div>
+                        <div class="media-right">
+                          <a
+                            class="btn btn-sm btn-primary"
+                            href="All-Instructors.html"
+                          >
+                            <i class="material-icons"
+                              >keyboard_arrow_right</i
+                            ></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <ul
+                      id="instructorName"
+                      class="list-group list-group-fit"
+                    ></ul>
+                  </div>
+                </div>
+
+                <div class="col-lg-5">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="media align-items-center">
+                        <div class="media-body">
+                          <h4 class="card-title">Students Name</h4>
+                        </div>
+                        <div class="media-right">
+                          <a
+                            class="btn btn-sm btn-primary"
+                            href="All-Student.html"
+                          >
+                            <i class="material-icons"
+                              >keyboard_arrow_right</i
+                            ></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <ul
+                      id="studentContainer"
+                      class="list-group list-group-fit"
+                    ></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+            <div class="mdk-drawer__content">
+              <div
+                class="sidebar sidebar-left sidebar-dark bg-dark o-hidden"
+                data-perfect-scrollbar
+              >
+                <div class="sidebar-p-y">
+                  <div class="sidebar-heading">Dashboard</div>
+                  <ul
+                    id="sidebarContainer"
+                    class="sidebar-menu sm-active-button-bg"
+                  >
+                    <li class="sidebar-menu-item active">
+                      <a
+                        class="sidebar-menu-button"
+                        href="Index-dashboard.html"
+                      >
+                        <i
+                          class="sidebar-menu-icon sidebar-menu-icon--left material-icons"
+                          >account_box</i
+                        >
+                        General
+                      </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                      <a class="sidebar-menu-button" href="AllPrograms.html">
+                        <i
+                          class="sidebar-menu-icon sidebar-menu-icon--left material-icons"
+                          >import_contacts</i
+                        >
+                        All programs
+                      </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                      <a class="sidebar-menu-button" href="All-Student.html">
+                        <i
+                          class="sidebar-menu-icon sidebar-menu-icon--left material-icons"
+                          >school</i
+                        >
+                        All Students
+                      </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                      <a
+                        class="sidebar-menu-button"
+                        href="All-Instructors.html"
+                      >
+                        <i
+                          class="sidebar-menu-icon sidebar-menu-icon--left material-icons"
+                          >person_outline</i
+                        >
+                        Instructors
+                      </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                      <a class="sidebar-menu-button" href="Assignments.html">
+                        <i
+                          class="sidebar-menu-icon sidebar-menu-icon--left material-icons"
+                          >dvr</i
+                        >
+                        Assignments
+                      </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                      <a class="sidebar-menu-button" href="Services.html">
+                        <i
+                          class="sidebar-menu-icon sidebar-menu-icon--left material-icons"
+                          >class</i
+                        >
+                        Services
+                      </a>
+                    </li>
+
+                    <li class="sidebar-menu-item">
+                      <a
+                        class="sidebar-menu-button sidebar-js-collapse"
+                        data-toggle="collapse"
+                        href="#materialPrograms"
+                      >
+                        <i
+                          class="sidebar-menu-icon sidebar-menu-icon--left material-icons"
+                          >folder</i
+                        >
+                        Materials
+                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                      </a>
+                      <ul
+                        class="sidebar-submenu sm-indent collapse"
+                        id="materialPrograms"
+                      ></ul>
+                    </li>
+                    <!-- Blogs Section -->
+                    <li class="sidebar-menu-item">
+                      <a
+                        class="sidebar-menu-button"
+                        data-toggle="collapse"
+                        href="#blogs_menu"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="blogs_menu"
+                      >
+                        <i
+                          class="sidebar-menu-icon sidebar-menu-icon--left material-icons"
+                          >chat_bubble_outline</i
+                        >
+                        Blogs
+                        <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                      </a>
+
+                      <ul
+                        class="sidebar-submenu sm-indent collapse"
+                        id="blogs_menu"
+                      >
+                        <li class="sidebar-menu-item">
+                          <a class="sidebar-menu-button" href="All-Blogs.html">
+                            <span class="sidebar-menu-text">All Blog</span>
+                          </a>
+                        </li>
+
+                        <li class="sidebar-menu-item">
+                          <a class="sidebar-menu-button" href="Add-Blog.html">
+                            <span class="sidebar-menu-text">Add Blog</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/dom-factory.js"></script>
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- App JS -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Highlight.js -->
+    <script src="assets/js/hljs.js"></script>
+
+    <!-- App Settings (safe to remove) -->
+    <!-- <script src="assets/js/app-settings.js"></script> -->
+
+    <!-- Global Settings -->
+    <script src="assets/js/settings.js"></script>
+
+    <!-- Moment.js -->
+    <script src="assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/moment-range.js"></script>
+
+    <!-- Chart.js -->
+    <script src="assets/vendor/Chart.min.js"></script>
+    <script src="assets/js/chartjs.js"></script>
+
+    <!-- Student Dashboard Page JS -->
+    <!-- <script src="assets/js/chartjs-rounded-bar.js"></script> -->
+    <script src="assets/js/page.student-dashboard.js"></script>
+    <script src="JavaScript/Main.js"></script>
+    <script src="JavaScript/instructor.js"></script>
+    <script src="JavaScript/Program.js"></script>
+    <script src="JavaScript/Student.js"></script>
+    <script src="JavaScript/Material.js"></script>
+  </body>
+
+  <!-- Mirrored from learnplus.demo.frontendmatter.com/student-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Jul 2024 19:59:18 GMT -->
+</html>
