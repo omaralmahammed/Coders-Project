@@ -28,19 +28,3 @@ Coders Debend is an innovative platform designed for an online coding school wit
 ## 📖 About the Project  
 This platform was developed to facilitate the learning experience of students and the management of courses by teachers. The goal is to create an efficient system for coding education where students can easily navigate their learning path, and teachers can effectively manage students and courses.  
 
----
-
-## 🎯 Key Learning Outcomes  
-- Applied **ASP.NET Core MVC** to develop a fully functional backend.  
-- Integrated **JWT authentication** for secure user access.  
-- Designed and implemented **SQL Server** database schema to manage users, courses, and tasks.  
-- Created an **interactive frontend** using HTML, CSS, and JavaScript to ensure a smooth user experience.  
-
----
-
-### 👥 Team Collaboration  
-This project was developed as part of my journey at **Orange Coding Academy** to practice real-world application development skills. The experience helped me improve both backend and frontend development skills while managing the learning process effectively.
-
----
-
-> **🎯 Ready to contribute?** Feel free to fork the repository, open issues, or suggest enhancements!
