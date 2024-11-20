@@ -17,7 +17,8 @@ Coders Debend is an innovative platform designed for an online coding school wit
 - **Manage Students**: Teachers can add or remove students, track their progress, and monitor engagement.  
 - **Create and Manage Subjects**: Teachers can create subjects and upload study materials for students.  
 - **Assign and Track Tasks**: Teachers can assign tasks and track their completion by students.  
-- **Dynamic Chat System**: Teachers can interact with students in real time to provide support and answer questions.  
+- **Dynamic Chat System**: Teachers can interact with students in real time to provide support and answer questions.
+- **Manage Blogs: Teachers can add, update, and handle blogs as well as delete comments on their blogs. 
 
 ---
 
